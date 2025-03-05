@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: rgb(196, 195, 195);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .total_box{
+            background-color: white;
+            border-radius: 8px;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+    
+        .form{
+            margin-top: -30px;
+            width: 350px;
+            height: 330px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #id > p {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        #password > p {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        input{
+            width: 280px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.363);
+            margin-bottom: 12px;
+            font-size: 14px;
+            padding-left:9px ;
+        }
+        input:focus{
+            outline: none;
+        }
+        #login_btn > input{
+            background-color: rgba(0, 0, 255, 0.432);
+            color: white;
+            font-size: 14px;
+            border: 1px solid rgba(0, 0, 0, 0.363);
+            
+        }
+        #text_box{
+            display: flex;
+            justify-content: center;
+        }
+        #text_box > div{
+            margin-left: 5px;
+        }
+        #text_box > div > a{
+         color: rgb(111, 110, 192);
+         font-weight: 600;
+        }
+        #login_input:hover{
+            cursor: pointer;
+            background-color: rgb(103, 101, 216);
+            font-size: 15px;
+            font-weight: 600;
+        }
+        #join:hover{
+            cursor: pointer;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="total_box">
+        <div class="title">
+                <h1>로그인</h1>
+        </div>
+        <form class="form" action="/html/signup.html" method="#">
+            <div class="form_inner_box">
+                <div id="id">
+                    <p>아이디</p>
+                    <input type="id" placeholder="아이디 입력">
+                </div>
+                <div id="password">
+                    <p>비밀번호</p>
+                    <input type="password" placeholder="비밀번호 입력">
+                </div>
+                <div id="login_btn">
+                    <input id="login_input" type="submit" value="로그인" >
+                </div>
+                <div id="text_box">
+                    <p>아직 회원이 아니신가요?</p>
+                    <div><a id="join" href="/html/signup.html">회원가입</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+       
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        /* li:first-child{
+            color: red;
+        } */
+        /* li:last-child{
+            color: blue;
+        } */
+        /* 홀 */
+        /* li:nth-child(odd){color: red;} */
+        /* 짝 */
+        /* li:nth-child(even){color: green;} */
+        /* x의 4
+        
+        4의 배수를 선택할 수 있음 */
+        /* li:nth-child(4n){ color: blue;} */
+        /* 특정 요소만 선택 가능 */
+        /* li:nth-child(6){ color: yellow;} */
+
+        ul:nth-of-type(4) a:hover{
+ 
+            text-decoration: line-through;
+        }
+        /* 요소를 눌렀을 때 적용할 스타일 (호버문 아래에 작성해야함) */
+        a:active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 가상 클래스 
+        HTML 요소의 특정 상태나 조건에 따라 스타일을 적용할 수 있도록 해주는 CSS선택자이다.
+    -->
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <ul id="last_ul">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">오시는길</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,45 @@
+h2{
+    margin-bottom: -10px;
+}
+#title{
+
+    font-size: 24px;
+    font-weight: 700;
+}
+#list{
+    list-style: none;
+}
+#list li{
+    
+    margin: 10px 0px -8px -24px;
+    background-color: red;
+    width: 96px;
+    height: 30px;
+}
+#list a{
+    display: flex;
+    align-items: center;
+    width: 91px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+/* #list li:nth-child(1){
+    margin: 10px 0px -8px -24px;
+    background-color: rgb(43, 255, 0);
+    width: 96px;
+}
+#list li:nth-child(1) a{
+   color: red;
+   text-decoration: underline;
+} */
+#list a:hover{
+    background-color: greenyellow;
+    color: red;
+    text-decoration: underline;
+}
+
+ 

@@ -1,0 +1,25 @@
+#total_box{
+    border: 3px double black;
+}
+#title_text{
+    background-color: rgba(105, 90, 205, 0.63);
+    border-bottom: 10px solid blue;
+}
+#title_text p{
+    padding: 18px 0px 0px 15px;
+    letter-spacing: 13px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+}
+#p1{
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 9px 15px;
+    border-bottom: 3px dotted black;
+    
+   
+}
+#p2{
+    padding: 0px 0px 9px 15px;
+    margin: 10px 0px 0px 0px;
+}

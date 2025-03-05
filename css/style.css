@@ -1,0 +1,140 @@
+/* CSS 파일을 분리하는 이유 */
+/* 1. HTML 코드 내부에서 디자인과 관련된 요소를 제거할 수 있기 때문이다.
+-> HTML 코드가 정보의 전달과 웹 페이지의 구조 설계라는 본연의기능에 집중할 수 있게 되었다. */
+h2{
+    color: red;
+}
+
+#profile{
+   display: grid;
+   grid-template-columns: 1fr 3.5fr;
+}
+#profile_info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    height: 15vw;
+}
+.thumbnail_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.thumbnail{
+    width: 100%;
+}
+#stat_bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.stat{
+    text-align: center;
+}
+/* 프로필 사진의 컨테이너 */
+#profile_pic{
+    width: 15vw;
+    height: 15vw;
+}
+/*하이라이트 사진의 컨테이너*/
+.highlight_pic{
+    width: 10vw;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle_pic{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 하이라이트 영역 grid 사용하여 정렬하기 */
+.highlight_area{
+    display: grid;
+    grid-template-columns: 12vw 12vw 1fr ;
+}
+.highlight{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#id{
+    font-size: 18px;
+    font-weight: bold;
+}
+button{
+    height: 80%;
+    width: 95%;
+
+    font-size: 10px;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+#top{
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 10vw;
+    min-height: 10vw;
+    margin-bottom: 3vw;
+    margin-bottom: 35px;
+    border-bottom: solid gray 0.1px;
+}
+#top img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 100%;
+    object-fit: contain;
+}
+input{
+    border: 1px solid gray;
+}
+input:focus{
+    outline: none;
+}
+#top input{
+    height: 35%;
+    width: 95%;
+
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+
+    font-size: 3vw;
+    font-weight: 100;
+}
+#top i{
+    font-size: 4vw;
+    margin-top: 1vw;
+}
+#top div{
+text-align: center;
+padding-top: 10px;
+margin-top: 15px;
+}
+#sub_icons{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 5vw;
+    height: 64px;
+}
+
+.selected{
+    border-bottom:3px gray solid;
+}
+
+/* 미디어 쿼라 *1
+@media(조건){
+조건이 맞을 때 보여줄 스타일}

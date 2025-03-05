@@ -1,0 +1,27 @@
+/* .prac_1{
+    color: aquamarine;
+}
+.prac_3{
+    color: aquamarine;
+}
+.prac_4{
+    color: rgb(0, 0, 0);
+}
+.prac_text{
+    color: red;
+} */
+.prac_ul{
+    margin-left: -30px;
+}
+.prac_ul li{
+    list-style: none;
+}
+.prac_ul li:nth-child(odd){
+ color: aquamarine;
+}
+.prac_text{
+    color: red;
+}
+.last_prac{
+    opacity: 0.6;
+}

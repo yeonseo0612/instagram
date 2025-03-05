@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         li {
+            list-style: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: blue;
+            border: 1px solid black;
+            padding: 6px;
+            position: relative; 
+        }
+
+        .menu1 {
+            display: flex;
+        }
+
+        .sub_menu {
+            top: 23px;
+            position: absolute;
+            display: flex;
+            width: 216px;
+            background-color: white;
+        }
+        .sub_menu_box {
+            display: none; 
+            position: absolute;
+            top: 16.5px; 
+            left: -41px;
+        }
+        .html:hover .sub_menu_box {
+            display: block;
+        }
+        .sub_menu li:hover{
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="total_box">
+        <ul class="menu1">
+            <li class="html">HTML
+            <div class="sub_menu_box">
+                <ul class="sub_menu">
+                    <li>메뉴1</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                </ul>
+            </div> 
+            </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>Jsp</li>
+        </ul>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //농구공이 23개가 있다
+        //하나의 박스에 4개씩 들어갈 수 있다.
+        //총 필요한 박스의 개수
+
+        let ball_total = 23;
+        let total_box = ball_total / 4;
+        let total_box_n = ball_total % 4;
+
+       
+
+        // document.write("박수의 개수: " , Math.ceil(total_box) , "개 <br>");
+
+        // let result = total_box_n != 0 ? Math.ceil(total_box) : total_box ;
+        
+        if(total_box_n != 0){
+
+            total_box = parseInt(total_box) + 1
+            document.write(total_box, "개 <br>");
+        
+        }else{
+            document.write(total_box, "개 <br>");
+        }
+        
+    
+
+        //사각형 면적과 둘레 계산하기
+        let row = 10;
+        let column = 5;
+        let surface = row * column;
+        let cf = (row * 2) + (column * 2);
+        document.write("면적 : " , surface , "cm<sup>2</sup> <br>") ;
+        document.write("둘레 : ", cf, "<br>");
+
+        //숫자들의 평균 구하기
+        let num1 = 80;
+        let num2 = 95;
+        let num3 = 75;
+
+        let sum = num1 + num2 + num3;
+        let avg = sum / 3 ;
+
+        document.write("총합 : " , sum ,"<br>");
+        document.write("평균 : " , avg ,"<br>");
+
+        //하루에 총 시간을 초로 계산하기
+
+        let day_hour = 24;
+        let one_hour = 60;
+        let one_min = 60 ;
+
+        let day_sec = (day_hour * one_hour * one_min);
+        document.write(day_sec, "sec <br>")
+
+
+        //섭씨 온도를 화씨 온도로 변환하기
+        //섭씨 * 1.8 + 32;
+        //25도를 화씨로 변환하여 출력
+
+        let temp1 = 25;
+        let temp2 = (temp1 * 1.8) + 32;
+        document.write(temp2 + "<br>");
+
+        let a, b
+        a = b = 3 + 4 * 5;
+        document.write("a =",a, "<br>");
+        document.write("b =",b, "<br>");
+        //a: 23
+        //b: 23
+
+    
+
+        // x = 10/2 * 3
+
+        // document.write("x=",x, '<br>')
+
+        // let result
+        // result = 6 + 3 > 7 && 2 < 4;
+        // //result = true;
+        // document.write(result)
+      
+        // document.write('', '<br>');
+        
+        let x, y, z, total
+
+        total = (x=2) + (y=3) * (z=4)
+        //1. total : 14
+        //2. a:, b:, c: 2 3 4
+
+        document.write('total : ', total, '<br>');
+        document.write('x :', x ,'<br>');
+        document.write('y :', y, '<br>');
+        document.write('z :', z, '<br>');
+
+
+
+        let i, j;
+        j = (i = 5) > 3 ? i * 2: i /2;
+        // i : 5
+        // j : 10
+
+        document.write('i:',i,'<br>');
+        document.write('j:',j,'<br>');
+
+        //
+
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

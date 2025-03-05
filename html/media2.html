@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  경우에 따라 모바일과 데크스탑용 디자인을 완전희 별개의 css파일로 관리하려고 할 때
+      미디어쿼리를 적용할 수 있다.  -->
+    <link rel="stylesheet" href="경로" media="(min-width:600px)">
+    <style>
+        @media(max-width:600px){
+            p{background-color: pink;}
+            .desktop{display: none;}
+            .mobile{display: block;}
+        }
+        @media(min-width:600px){
+            p{background-color: rgb(192, 235, 255);}
+            .desktop{display: block;}
+            .mobile{display: none;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="desktop" src="/img/3.jpg" alt="">
+        <p>화면에 어떻게 표시되나요?</p>
+        <img class="mobile" src="/img/4.jpg" alt="">
+    </div>
+</body>
+</html>

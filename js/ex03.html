@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    // 변수를 만드는 법(변수의 선언)
+    //1.키워드  변수명 = 데이터; -> 빈 그릇만 만듦
+    //2. 키워드 변수명 = 데이터; -> 그릇을 만들며 물도 따라놓은 상태
+
+    //변수의 대입
+    //변수명 = 새로운 데이터;
+    
+
+    //키워드
+    //var : 같은 이름의 변수가 만들어졌을 때 감지하지 못한다. -> 에러 안 남.
+    //let : 같은 이름의 변수가 만들어졌을 때 감지한다. -> 에러 남
+    // ㄴ 새로운 값은 대입할 수 있다.
+    // const : 같은 이름의 변수가 만들어졌을 때 에러가 난다. 대입이 불가능함.
+
+    // 변수명 짓는 규칙
+    // 첫글자 영문자(a~z,A~Z), 밑줄(_), 달러기호(&)로 시작해야한다. 숫자x
+    //대소문자를 구별한다(home, Home)
+    //공백이나 특수문자를 포함할 수 없다.
+    //예약어 (if, for, while, const 등) 자바스크립트에서 이미사용중인 것들  
+    //예약어는 변수명으로 사용할 수 있다.
+    //한글 절대 쓰지 않기
+    //권장사항
+    //의미있는 이름으로 짓기, 길어져도 상관없음 축약도 가능
+    //나이 -> age, 주소-> address
+
+    //변수명 표기법
+    //Camel Case(낙타 표기법)
+    //첫 단어는 소문자로 시작하고 다음 단어는 대문자로 시작함
+    //homeAdrress, totalScore, myAge
+    //Snake Case(스네이스표기법)
+    //단어 사이에 밑줄(_)로 연결하는 규칙
+    //home_address, total_score, my_age
+    //Pascal Case(파스칼 표기법)
+    // 모든 단어의 첫 글자를 대문자로 작성한다.
+    //HomeAdrress, TotalScoe, MyAge
+    //헝가리 표기법
+    //변수명을 지을 때 데이터의 타입이나 의미를 나타내는 접두사를 붙인다.
+    //nCount, sDate
+
+    let n1 = 10;
+    // 변수를 사용하여 데이터를 관리하면 재사용성에 매우 유리하다.
+    document.write(n1)
+    document.write("<br>")
+    let s1 = "홍길동";
+    document.write(s1)
+
+   n1 = 20;
+   document.write(n1)
+   document.write("<br>")
+   let n3 = 30;
+
+        // 연산한 값도 대입할 수 있+
+        //다
+   let n4 = n1 + n3
+   
+   // 데이터의 타입이 다를 때 +기호는 연결의 의미를 갖는다.
+  document.write(n1 + s1) 
+  document.write("<br>")
+   // 데이터의 타입이 같을 떄 + 기호는 연산의 의미를 갖는다.
+   document.write(n1 + n3 + "<br>")
+   document.write(n4)
+
+   let n5; //비어있는 그릇
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<hr>")
+    let name = "홍길동"
+    let age = 45
+    let ad = "인천시 부평구"
+    let height = 184.5
+
+    document.write("이름 : " + name +"<br>" + "나이 : " + age +"<br>" + "주소 : " + ad + "<br>" + "키 : " + height)
+ 
+    //숫자형 데이터는 그냥 써도 된다.
+    //문자형 데이터는 "나"에 묶어서 써야 한다.
+    
+    //데이터는 웬만하면 변수에 대입을 한 후 사용한다.
+    //출력, 대입과 같은 기능을 사용할 때 변수명을 통해서 한다.
+
+    //호이스팅
+    //자바스크립트 엔진 ->
+
+
+    //
+
+
+
+
+    </script>
+</head>
+<body>
+
+   
+</body>
+</html>

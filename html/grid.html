@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* grip-template-columns : 트랙 기준 크기와 개수를 정한다(열) */
+        /* grip-template-rows : 트랙 기준 크기와 개수를 정한다(행) */
+        .wrapper{
+            display: grid;
+            /* grid-template-columns:  300px 50px 100px;
+            grid-template-rows:  200px 50px; */
+            /* repeat() 함수 : repeat(횟수, 크기) */
+            /* grid-template-columns: repeat(9, 100px) */
+        }
+        div:nth-child(1){
+            background-color: yellowgreen;
+        }
+        div:nth-child(2){
+            background-color: rgb(205, 50, 159);
+        }
+        div:nth-child(3){
+            background-color: rgb(92, 99, 80);
+        }
+        div:nth-child(4){
+            background-color: rgb(213, 236, 166);
+        }
+        div:nth-child(5){
+            background-color: rgb(50, 205, 205);
+        }
+        div:nth-child(6){
+            background-color: rgb(205, 50, 97);
+        }
+
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //제어문(control-statement)
+        //실행문의 순서를 변경하는 것으로 조건문과 반복문이 있다.
+        //조건문 : if, switch
+        //반복문 : for, while
+
+        //조건문
+        //조건식에 따라 프로그램의 흐름을 제어할 수 있는 문법
+        //조건식 : 참인지 거짓인지 판별할 수 있는 식
+        //if문
+        //if(조건식){
+        // 조건식이 참일 때 실행할 명령;
+        //}
+
+        let x = 10;
+
+        if(x == 10){
+        document.write('x는 10입니다.', '<br>'); //코드블럭
+        }   
+        document.write('x:', x, '<br>');
+    
+        //변수의 유효범위(scope)
+        //var ㅋ키워드는 코드블럭 안에서 생성해도 밖에서 사용할 수 있따.
+
+        if(true){
+            var variable =1;
+        }
+        console.log(variable);
+        //let const
+        //let, const는 블록레벨의 유효범위를 가지기 때문에 다른 변수로 인식을 한다.
+        // if(true){
+        //     let k =1;
+        // }
+        // console.log(k);
+
+        //age변수에 임의의 값으로 초기화 후
+        //20세 이상이면 "성인입니다 콘솔 출력"
+
+
+        // let age = 17;
+
+        // if(!(age >= 20)){
+        //    alert('20세 미만입니다');
+        // }
+        // }else{
+        //     console.log('20세 미만입니다');
+        // }
+
+        //if ~ else{
+        //참일 때 실행할 명령, 거짓일 때 실행할 명령
+        //} else{
+        // 조건식이 거짓일 때 실행할 명령;
+        //}
+
+        let num = 5;
+        if(num > 4){
+            console.log(num, "은 4보다 큽니다");
+        }else{
+            console.log(num, "은 4보다 작습니다"); //`${num}은 4 보다 큽니다. `
+        }
+        //템플릿 리터럴 -> 표현식의 값을 문자열에 추가하거나 여러줄의 문자열을 표현할 수 있다.
+
+        let a = 2
+        
+        ;
+        let b = 3;
+        console.log(`${a}+ ${b} = ${a+b}`)
+
+        let p = 10;
+        let u = 7;
+        let max = 0;
+        //10과 7중 큰수는 10입니다.
+        if(p>u){
+            max = p;
+            console.log(`${p}와 ${u}중 큰 수는 ${max} 입니다`);
+        }else{
+            max = u;
+            console.log(`${p}와 ${u}중 큰 수는 ${max} 입니다`);
+        }
+        //x개의 농구공을 담기 위한 박스의 개수 구하기
+        //하나의 박스에는 4개씩 담을 수 있다.
+        //필요하다면 Math.ceil()사용하기
+        let ball = 13;
+        let total_Box;
+        
+        
+        if(ball % 4 != 0 ){
+            total_Box = ball / 4;
+            total_Box = Math.ceil(total_Box);
+            console.log(`${total_Box} 개`);
+        }else{
+            total_Box = ball / 4;
+            total_Box
+            console.log(`${total_Box} 개`);
+        }
+
+        //if ~ else if ~ else
+
+        //if(조건식1){
+        
+        //} else if(조건식 2){
+        // 조건식1이 거짓이고 조건식2가 참일 때 실행할 문장
+        //} else if(조건식 3) {
+        // 조건식2가 거짓이고 조건식3이 참일때 실행할 문장
+        //}
+
+        // let favorite = 7;
+
+        // if(favortie < 5){
+        //  console.log(`좋아하는 숫자가 5보다 작습니다.`);
+        // }else if(favorite > 5){
+        //     console.log(`좋아하는 숫자가 5보다 큽니다`);
+        // }else{
+        //     console.log(`좋아하는 숫자는 5입니다.`);
+        // }
+        //효율적인 흐름으로 제어하기 위해 if문과 else if문의 조건문의 위치를 잘 생각해야한다.
+        // if(favortie > 5){
+        //     console.log('좋아하는 숫자가 5보다 큽니다');
+        // }else if(favorite == 7){
+        //     console.log('좋아하는 숫자는 7입니다');
+        // }
+
+        //임의의 나이를 age에 대입하고
+        //20살 이상이면 "성인입니다"
+        //17살 이상이면 "청소년입니다"
+        //6살 이상이면 어린이 입니다.
+        //아래로는 유아
+
+        let age = 17;
+
+        if(age >= 20){
+            console.log('성인입니다.');
+        }else if(age >= 17){
+            console.log('청소년입니다.');
+        }else if(age >= 6){
+            console.log('어린이입니다.');
+        }else{
+            console.log('유아입니다.');
+        }
+        
+        // document.getElementById("btn").addEventListener("click", function() {
+        //     let score = parseInt(document.getElementById("num").value);  // 문자열을 숫자로 변환
+
+        //     // 유효한 입력인지 확인
+        //     if (isNaN(score)) {
+        //         alert("올바른 점수를 입력해주세요.");
+        //         return;
+        //     }
+
+        //     if (score > 100) {
+        //         alert("100 이상은 점수로 나올 수 없습니다.");
+        //     } else if (score >= 90) {
+        //         console.log('A');
+        //     } else if (score >= 80) {
+        //         console.log('B');
+        //     } else if (score >= 70) {
+        //         console.log('C');
+        //     } else if (score >= 60) {
+        //         console.log('D');
+        //     } else {
+        //         console.log('F');
+        //     }
+        // });
+        //90점 이상은 'A'
+        //80점 이상은 'b'
+      
+        if(num <=10){
+            if(num % 2 == 1){
+                console.log(`${num}은 10보다 작은 홀수입니다.`);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input id="num" type="text" placeholder="입력해주세요">
+    <button id = "btn">입력</button>
+    <div id="result"></div>
+</body>
+<script type="text/javascript">
+     document.getElementById("btn").addEventListener("click", function() {
+            let score = parseInt(document.getElementById("num").value);  // 문자열을 숫자로 변환
+
+            // 유효한 입력인지 확인
+            if (isNaN(score)) {
+                alert("올바른 점수를 입력해주세요.");
+                return;
+            }
+
+            if (score > 100) {
+                alert("잘못입력 했습니다.");
+            } else if (score >= 90) {
+                console.log('A');
+            } else if (score >= 80) {
+                console.log('B');
+            } else if (score >= 70) {
+                console.log('C');
+            } else if (score >= 60) {
+                console.log('D');
+            } else {
+                console.log('F');
+            }
+        });
+</script>
+</html>

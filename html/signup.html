@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box-sizing
+        CSS에서 요소의 크기를 계산하는 방식을 변경하는 속성
+        CONTENT-BOX가 기본값
+        -요소의 너비와 높이는 오직 내용 영역만을 의미한다
+        -PADDING MARGIN BORDER는 요소의 총 크기에 추가된다.
+        -BORDER-BOX
+        -요소의 너비와 높이는 PADDING과 BORDER를 포함한 전체 영역
+        -지정한 너비 내에서 PADDING과 BORDER를 포함한 전체 영역
+        -지정한 너비 내에서 PADDING과 BORDER가 계산되므로
+        내용 영역은 자동으로 줄어든다.
+        */
+        /* GAP: 10PX */
+        /* 기본 설정 */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        input{
+            margin-top: 3px;
+            margin-bottom: 12px;
+            width: 300px;
+            height: 37px;
+            border: 1px solid rgb(175, 172, 172);
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+        input:focus{
+            outline: none;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        body{
+            height: 100vh;
+            background-color: rgb(209, 209, 209);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 전체 container */
+        .total_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 7px;
+            width: 380px;
+            height: 600px;
+            justify-content: center;
+        }
+        /* form 틀 */
+        .form_title{
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        #form_info{
+            font-weight: 900;
+            font-size: 14px;
+        }
+        /* 아이디 */
+        .form_id_inner_box{
+            display: flex;
+            justify-content: space-between;
+        }
+        .id_input{
+            width: 205px;
+        }
+        #id_check{
+            width: 83px;
+        }
+        /* 야이디 중복체크 btn */
+        #id_check{
+            background-color: rgb(113, 92, 233);
+            color: white;
+            cursor: pointer;
+        }
+        #id_check:hover{
+            background-color: rgb(90, 73, 187);
+        }
+        /* 이메일 */
+        .email_inner_box{
+            display: flex;
+        }
+        #email{
+            width: 170px;
+        }
+        .email_sim{
+            display: flex;
+            align-items: center;
+            margin: 4px;
+        }
+        .email_sim > p{
+            font-weight: 700; 
+            font-size: 16px;
+        }
+        /* 이메일 select */
+        .domain{
+            width: 93px;
+            height: 37px;
+            margin-top: 4px;
+            border-radius: 4px;
+            border: 1px solid rgb(175, 172, 172);
+            color: rgb(54, 54, 54);
+        }
+        /* 회원가입 버튼 */
+        #signup{
+            background-color: rgb(113, 92, 233);
+            color: white;
+            cursor: pointer;
+        }
+        #signup:hover{
+            background-color: rgb(90, 73, 187);
+            color: white;
+        }
+        /* 회원가입 폼 하단 텍스트 */
+        .login_text_box{
+            display: flex;
+            margin-top: -4px;
+        }
+        .login_text_box > a{
+            color: rgb(66, 68, 190);
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .login_text_box > p{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="total_box">
+        <form action="#" method="post">
+            <div>
+                <div class="form_title">
+                    <h1>회원가입</h1>
+                </div>
+                <div class="form_name">
+                    <p id="form_info">이름</p>
+                    <input id="name" type="text" placeholder=" 이름 입력">
+                </div>
+                <div class="form_id_box" style="margin-bottom: 20px;">
+                    <p id="form_info">아이디</p>
+                    <div class="form_id_inner_box">
+                        <input class="id_input" id="id" type="text" placeholder="아이디 입력">
+                        <input id="id_check" type="button" value="중복체크">
+                    </div>
+                </div>
+                <div class="form_pwd_box">
+                    <p id="form_info">비밀번호</p>
+                    <input id="pwd" type="password" placeholder="비밀번호 입력">  
+                </div>
+                <div class="form_pwd_check_box">
+                    <p id="form_info">비밀번호 확인</p>
+                    <input id="pwd_check" type="password" placeholder="비밀번호 확인">
+                </div>
+                <div style="margin-bottom: 25px;" class="email_box">
+                    <p id="form_info">이메일</p>
+                    <div class="email_inner_box">
+                        <input id="email" type="email" placeholder="이메일">
+                        <div class="email_sim">
+                            <p>@</p>
+                        </div>
+                       <select class="domain" name="" id="">
+                            <option value="">naver.com</option>
+                            <option value="">daum.net</option>
+                            <option value="">nate.com</option>
+                       </select>
+                    </div>
+                </div>
+                <div class="signup_btn">
+                    <input id="signup" type="submit" value="회원가입">
+                </div>
+            </div>
+        </form>
+        <div class="login_text_box">
+            <p>이미 계정이 있으신가요?</p>
+            <a id="login_btn" href="/html/login.html">로그인</a>
+        </div>
+    </div>
+</body>
+</html>

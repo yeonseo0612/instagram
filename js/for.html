@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           document.write('<hr>');
+        //시작값과 종료값 사이에서
+        //참이되는 숫자의 개수가 반복횟수라고 보면 됨 
+        for(let i=0; i<3; i++){
+            console.log('i');
+        }
+        //h태그 크기별로 출력
+        for(let i=0; i<3; i++){
+            document.write(`<h${i}>자바스크립트</${i}>`);
+        }
+        document.write("<hr>")
+        //ul 안에 li 3개 출력
+        for(let i=0; i<1; i++){
+             document.write(`<ul>`);
+            for(let j=0; j<3; j++){
+                document.write(`<li>안녕</li>`);
+            } 
+            document.write(`</ul>`);
+        }
+            document.write('<hr>');
+
+        //8단만 출력
+        for(let i = 8; i< 9; i++){
+               document.write(`${i}단 <br>`); 
+            for(let j= 1; j <=9; j++){
+                document.write(`${i} x ${j} = ${i*j} <br>`);
+            }
+        }
+        //10부터 1까지 감소
+        document.write('<hr>');
+        for(let i = 10; i>0; i--){
+            document.write(`${i}<br>`);
+        }
+
+        //1부터 10까지 총함
+       document.write('<hr>');
+        let sum =0;
+        for(let i=1; i<=10; i++){
+            sum += i 
+        }
+        document.write(`${sum}`);
+
+        document.write('<hr>');
+        //짝수만 구하기
+        for(let i = 1; i <=10; i++){
+            if(i % 2 == 0){
+                document.write(i ,"<br>");
+            }
+        }
+        document.write('<hr>');
+        //1 ~ 10까지 3의 배수만 출력하기
+        for(let i = 1; i<=10; i++){
+            if(i % 3 == 0){
+                document.write(i, '<br>');
+            }
+        }
+
+        // for 문의 중첩
+        //반복문을 반복하기
+        for(let i =1; i< 4; i++){
+            for(let j =1 ; j <4; j++){
+                document.write(i," ",j,'<br>');
+            }
+        }
+        document.write('<hr>');
+        //1111
+        //1111
+        //1111
+        //밖 for-> 행
+        //안 for-> 열
+        for(let i =1; i<4; i++){
+            for(let j=1; j<5; j++){
+                document.write(1,' ');
+            }
+            document.write('<br>');
+        }
+        //AAA
+        //AAA
+        //AAA
+        document.write('<hr>');
+
+        // for(let i=1; i<=4; i++){
+        //     for(let j=1; j<4; j++){
+        //         document.write("A",' ');
+        //     }
+        //     document.write('<br>');
+        // }
+        // document.write('<hr>');
+
+        // for(let i = 1; i<=3; i++){
+        //    for(let j = 1; j<=4; j++){
+        //         document.write(j,' ');
+        //    }
+        //    document.write('<br>');
+        // }
+        
+        //1234
+        //5678
+        //9101112
+        let start = 1;  // 숫자의 시작 값
+
+        for (let i = 0; i < 3; i++) {
+        for (let j = start; j < start + 4; j++) {
+            document.write(j, " ");
+        }
+        document.write("<br>");
+        start += 4;  // 다음 줄의 시작 값을 4 증가시킴
+    }
+
+        let num = 1;
+        for(let i = 0; i<3; i++){
+            for(let j = 0; j<4; j++){
+                document.write(num++, " "); // num += 1
+            }
+            document.write('<br>');
+        }
+
+        // for(let i = 0; i< 4; i++){
+        //     for(let j =0; j<3; j++){
+        //         document.write('*'," ");
+        //     }
+        //     document.write('<br>');
+        // }
+
+         num = 1;
+
+        for(let i=0; i<5; i++){
+            for(let j=0; j< num; j++){
+                document.write('*'," ");
+            }
+            document.write('<br>');
+            num++;
+        }
+
+        for(let i =1; i<=5; i++){
+            for(let j = 0; j <i; j++){
+                document.write('*'," ");
+            }
+            document.write("<br>");
+        }
+
+        for(let i = 0; i<5; i++){
+            
+            for(let j = 0; j< 5-(i+1); j++){
+                document.write('&nbsp'); 
+            }
+           //별표를 찍는 for
+            for(let k = 1; k<= i+1; k++){
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        for(let i =1; i <=10; i++){
+            for(let j = 0; j < 10; j++){
+                let num = i+j;
+                if(num > 10){
+                    num -= 10;
+                }
+                document.write(num," ")
+            }
+            document.write('<br>');
+        }
+    
+
+         
+        
+      
+
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

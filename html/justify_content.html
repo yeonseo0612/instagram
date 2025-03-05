@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex의 container 속성
+        justify-content : 메인 축을 기준으로 수평에서의 정렬
+        align-content: 메인 축을 기준으로 수직에서의 정렬 */
+        section {
+            display: flex;
+            border: 1px dashed black
+        }
+        div{
+            width: 50px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            border: 1px solid black;
+            background-color: palevioletred;
+            margin: 5px;
+        }
+        div:nth-of-type(odd){
+            
+            background-color: rgb(255, 196, 0);
+        }
+        /*  */
+        .flex-start{
+            justify-content: flex-start;
+        }
+        /*  */
+        .flex-end{
+            justify-content: flex-end;
+        }
+        /* 화면 정중앙 세팅  */
+        .center{
+            justify-content: center;
+        }
+        /*  */
+        .space-between{
+            justify-content: space-between;
+        }
+        /*  */
+        .space-around{
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content와  align-items</h1>
+    <hr>
+    <p>flex-start</p>
+    <section class="flex-start">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+    </section>
+    <p>flex-end</p>
+    <section class="flex-end">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+    </section>
+    <p>center</p>
+    <section class="center">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+    </section>
+    <p>space-between</p>
+    <section class="space-between">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+    </section>
+    <p>space-around</p>
+    <section class="space-around">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+        <div class="e">e</div>
+    </section>
+</body>
+</html>
