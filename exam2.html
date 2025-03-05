@@ -19,14 +19,14 @@
        outer:for(let i = 0; i < lotto.length;){
         lotto[i] = Math.floor(Math.random() * 45) + 1;
 
-        for(let j = 0; j< i; j++){
+        for(let j = 0; j < i; j++){ // 첫 시작일 경우 i와 j가 같으므로 실행이 안됨. 이후에는 lotto 0번 과 lotto 1번 비교
             if(lotto[i] === lotto[j]){
                 continue outer;
             }
         }
 
-        
-        console.log(lotto[i]+" ")
+
+        console.log(lotto[i]+" ") // 중복이 안될경우 출력 후 i 증감
         i++;
        }
     </script>
