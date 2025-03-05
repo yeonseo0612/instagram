@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let lotto_numbers = new Array
+       let num = 0;
+       while(lotto_numbers.length != 6){
+        num = Math.floor(Math.random() * 45) + 1;
+        if(!lotto_numbers.includes(num)){
+            lotto_numbers.push(num);
+        }
+       }
+       console.log(lotto_numbers);
+
+       let lotto = new Array(6);
+       outer:for(let i = 0; i < lotto.length;){
+        lotto[i] = Math.floor(Math.random() * 45) + 1;
+
+        for(let j = 0; j< i; j++){
+            if(lotto[i] === lotto[j]){
+                continue outer;
+            }
+        }
+
+        
+        console.log(lotto[i]+" ")
+        i++;
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

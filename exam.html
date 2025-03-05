@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numbers = [10, 20, 30, 40, 50]
+
+        let re_numbers = new Array(numbers.length)
+
+        for(i = 0; i < numbers.length; i++){
+            re_numbers[i] = numbers[numbers.length - i - 1]
+        }
+        console.log(re_numbers);
+
+        //3. numbers에서 짝수만 출력하세요
+
+        for(i = 0; i < numbers.length; i++){
+            if(i % 2 == 1){
+                console.log(numbers[i]);
+            }
+        }
+
+        //1 ~ 45의 난수를 발생시켜 로또번호를 생성하는 프로그램 만들기.
+       ;
+
+    //    let lotto = new Array
+    //    let num = 0;
+    //    while(lotto.length < 20){
+    //     num = Math.floor(Math.random() * 45) + 1;
+    //     lotto[num]
+    //     console.log(lotto);
+    //    }
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
