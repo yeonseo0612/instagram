@@ -38,6 +38,24 @@
     console.log(fruits[0]);
     console.log(fruits[1]);
     console.log(fruits[2]);
+
+    fruits[0] = 300;
+
+    console.log('fruits[0]');
+
+    //배열의 요소는 다른 자료형이어도 가능하다.
+    let mixedArray = [42, "hello", tre, [1,2,3]]
+
+    //배열의 길이
+    console.log(`배열의 길이 : ${mixedArray.length}`);
+
+    //잘못된 인덱스 접근
+    console.log(fruits[3]);
+
+    //배열의 동적할당
+    fruits[3] = 'grape';
+
+    console.log(fruits[3]);
    </script>
 </head>
 <body>
