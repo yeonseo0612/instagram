@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function gugudan(x){
+            let result = " ";
+           
+                for(j=1; j<10; j++){
+                    result += `${x} x ${j} = ${x * j}<br>`;  
+                }
+            
+            return result;
+        }
+        
+
+        let func3 = () => {
+
+            let num_1 = document.querySelector("#num_1").value;
+            let result = " ";
+
+            if(num_1 === ""){
+                alert("값을 입력해주세요!");
+            }else if(num_1>=9 || num_1<=1){
+                alert("2~9사이의 값을 입력해주세요");
+            }else{
+
+                let result = gugudan(num_1);
+
+               let result_box_inner = document.querySelector(".result_box")
+
+               result_box_inner.innerHTML = result;
+            }
+        }
+
+
+
+    </script>
+    <style>
+        .div_total{ 
+            display: flex;
+           
+        }
+        .div1{
+            display: flex;
+            margin-bottom: -8px;
+        }
+        .div1 p{
+           font-weight: 700;
+            font-size: 14px;
+
+        }
+        .div1 input{
+            margin-left: 5px;
+            margin-top: 10px;
+            width: 200px;
+            height: 20px;
+        }
+        .div2{
+            margin-top: 9px;
+            margin-left: 5px;
+        }
+        .div2 button{
+            height: 27px;
+        }
+        .result_box{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_total">
+        <div class="div1">
+            <p>단 :</p>
+            <input type="text" name="num" id="num_1">
+        </div>
+        <div class="div2">
+            <button id="calc" onclick="func3()">계산시작</button>
+            <button id="hidden" onclick="">숨기기</button>
+        </div>
+    </div>
+    <hr>
+    <div class="result_box">
+
+    </div>
+  
+</body>
+</html>
