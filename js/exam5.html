@@ -26,6 +26,8 @@
                 alert("값을 입력해주세요!");
             }else if(num_1>=9 || num_1<=1){
                 alert("2~9사이의 값을 입력해주세요");
+            }  else if(isNaN(num_1)){
+                alert("숫자만 입력해주세요!");
             }else{
 
                 let result = gugudan(num_1);
@@ -35,6 +37,30 @@
                result_box_inner.innerHTML = result;
             }
         }
+
+        let click = 0;
+
+// 숨기기/보이기 처리
+let func4 = () => {
+    let result_box_inner = document.querySelector(".result_box");
+    
+    if(result_box_inner.innerHTML !== "" && click == 0){
+        result_box_inner.style.display ="none";
+        click = 1;
+        document.querySelector("#hidden").addEventListener("click", function(){
+            result_box_inner.style.display ="block";
+            click = 0;
+        })
+    } else {
+        result_box_inner.style.display ="block";  
+        click = 0;
+        document.querySelector("#hidden").addEventListener("click", function(){
+            result_box_inner.style.display ="none";
+            click = 1;
+        })
+    }
+
+}
 
 
 
@@ -80,7 +106,7 @@
         </div>
         <div class="div2">
             <button id="calc" onclick="func3()">계산시작</button>
-            <button id="hidden" onclick="">숨기기</button>
+            <button id="hidden" onclick="func4()">숨기기</button>
         </div>
     </div>
     <hr>
