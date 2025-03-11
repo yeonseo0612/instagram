@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #name_modify_box{
+            border: 1px solid black;
+            width: 300px;
+            margin-top: 10px;
+        }
+        input:focus{
+            outline: none;
+        }
+        input{
+            margin: 5px;
+            width: 200px;
+            height: 20px;
+        }
+        #name_modify_ok_box{
+            display: none;
+        }
+    </style>
+    <script src="/js/name.js"></script>
+    
+</head>
+<body>
+    <div id="name_modify_box">
+        <div id="name_modify_content">
+            <label for="">이름 :</label>
+            <input type="text" name="" id="name_box" value="None" readonly>
+            <button id="modify_btn">수정</button>
+        </div>
+        <div id="name_modify_ok_box">
+            <input id="modify_name" type="text" placeholder="새 이름 입력">
+            <button id="modify_ok_btn">확인</button>
+        </div>
+    </div>
+</body>
+</html>

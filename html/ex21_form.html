@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //form태그를 읽어오는 두번째 방법
+        function check(){
+            let f = document.ff;
+            //form태그에 준 name값을 가지고 바로 선택할 수있다.
+
+            //id input태글 선택하기
+            let myId = f.m_id.value;
+            f.submit();
+        }
+    </script>
+</head>
+<body>
+    <form action="login.jsp" method="GET" name="ff">
+        <table border="1px solid black" style="text-align: right;">
+            <tr>
+                <th>ID :</th>
+                <td><input type="text" name="m_id" placeholder="아이디를 입력해주세요"></td>
+            </tr>
+            <tr>
+                <th>AGE :</th>
+                <td><input type="text" name="m_age" placeholder="나이를 입력해주세요"></td>
+            </tr>
+            <tr>
+                <th>PWD :</th>
+                <td><input type="password" name="m_pwd" placeholder="비밀번호를 입력해주세요"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="전송" onclick="check()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
