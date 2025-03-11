@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">  <!--루트 요소-->
+    <head> <!-- html의 meta정보를 포함한다. -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>국비 실습</title> <!-- html 페이지의 제목, 브라우저, 상단의 웹페이지 탭에 제목으로 노출-->
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+        <script src="/js/script.js"></script>
+    </head>
+    <body>
+        <!-- html 문서에서 실질적으로 보이는 영역을 정의하는 구간 이미지, 글, 링크, 테이블, 동영상 등등-->
+        <!-- 코드 작성시 엔터를 눌러 줄바꿈을 시도했음에도 불구하고 실행화면에는 한줄로 연결된 채 나온다.-->  
+        <div id="top">
+            <img src="img/text.png" alt=""/>
+            <input type="text" value="검색" name="" id="">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-solid fa-compass"></i>
+                <i class="fa-solid fa-heart"></i>
+                
+            </div>
+        </div>
+        <div id="profile"> 
+            <div id="profile_pic">
+                <img class="circle_pic" width="50px" src="img/cat.jpg"/>
+            </div>
+            <div id="profile_info">
+                <div id="id">
+                    <span>half_bottle</span><i class="fa-solid fa-gear"></i> </div>
+                    <button>프로필편집</button>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <p>
+                <strong id="userInfo">반병현(BynghyunBan)💛<br></strong>
+               <span id="summary">작가</span> <br>
+            </p>
+            <p id="profileDetail">
+                <a href="https://needleworm.github.io/">needleworm.github.io</a>
+            </p>
+        </div>
+        <div>
+            <div class="highlight_area">
+                    <div class="highlight">
+                        <div class="highlight_pic">
+                            <img class="circle_pic" src="img/h1.jpg" height="35px" alt="">
+                        </div>
+                        <div>
+                            😆
+                        </div>
+                    </div>
+               
+              
+                    <div class="highlight">
+                        <div class="highlight_pic">
+                            <img class="circle_pic" src="img/h2.jpg" height="35px" alt="">
+                        </div>
+                        <div>
+                            😎
+                        </div>
+                    </div>
+                    
+                
+            </div>
+        </div>
+        <div>
+           <!-- <div style="display: flex;">
+                <div>
+                    <p>게시물</p>
+                    <div>133</div>
+                </div>
+                <div>
+                    <p>팔로워</p>
+                    <div>408</div>
+                </div>
+                <div>
+                   <p>팔로우</p>
+                   <div>189</div>
+                </div>
+           </div> -->
+           <div id="stat_bar">
+                <div class="stat">
+                    게시물<br>
+                    133
+                </div>
+                <div class="stat">
+                    팔로워<br>
+                    408
+                </div>
+                <div class="stat">
+                    팔로우<br>
+                    189
+            </div>    
+           </div>
+        </div>
+        <!-- 아이콘이 들어갈 자리 -->
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fa-solid fa-border-all"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-film"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tag"></i>
+            </div>
+        </div>
+        <div >
+            <!-- 부모 너비의 32%값이 지정된다.
+                퍼센트로 지정된 값은 화면 크기에 따라 유동적으로 바뀐다.
+                창 크기의 변화에 맞춰 그때그때 화면의 정보나 크기가 함께 바뀌는 웹 페이지를 반응형
+                웹이라고 한다. 
+            -->
+            <div class="thumbnail_grid">
+                <img class="thumbnail" src="img/2.jpg" alt="" >
+                <img class="thumbnail" src="img/1.jpg" alt="" >
+                <img class="thumbnail" src="img/3.jpg" alt="" >
+                </div>
+            <div class="thumbnail_grid">
+                <img class="thumbnail" src="img/4.jpg" alt="" >
+                <img class="thumbnail" src="img/5.jpg" alt="" >
+                <img class="thumbnail" src="img/6.jpg" alt="" >
+            </div>
+            <div class="thumbnail_grid">
+                <img class="thumbnail" src="img/7.jpg" alt="" >
+                <img class="thumbnail" src="img/8.jpg" alt="" >
+                <img class="thumbnail" src="img/9.jpg" alt="" >
+            </div>
+        </div>
+    </body>
+</html>
